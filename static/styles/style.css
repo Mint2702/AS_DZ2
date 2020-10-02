@@ -64,6 +64,16 @@ footer{
 
 .text1 a{
     font-family: Footer;
+    text-decoration: none;
+    color: rgb(240, 230, 240);
+}
+
+.text1 a:hover{
+    color: #1f2b2e;
+}
+
+.text1 a:active{
+    color: red;
 }
 
 .Logo1{
@@ -99,6 +109,16 @@ footer{
 .text2 a{
     font-family: Footer;
     background-color: #37A0B8;
+    text-decoration: none;
+    color: thistle;
+}
+
+.text2 a:hover{
+    color: #1f2b2e;
+}
+
+.text2 a:active{
+    color: red;
 }
 
 .Logo2{
@@ -116,3 +136,29 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+.image{
+    display: flex;
+    height: 80%;
+}
+
+.ImagesSpace{
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+.ImagesColumn{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3%;
+    justify-content: center;
+}
+
