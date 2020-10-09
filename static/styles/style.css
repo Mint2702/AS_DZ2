@@ -23,6 +23,9 @@ header{
     height: 7%;
     background-color: #19476B;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 footer{
@@ -46,6 +49,22 @@ footer{
     text-align: center;
     font-size: 2vw;
     font-family: 'Logo';
+}
+
+
+#buttons{
+    height: 30%;
+    margin-right: 30px;
+}
+
+
+#showAll{
+    margin-right: 10px;
+}
+
+
+#showOne{
+
 }
 
 
