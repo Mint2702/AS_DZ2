@@ -1,5 +1,4 @@
-let content1 = document.getElementById('part1');
-let content2 = document.getElementById('part2');
+let content = document.getElementById("myHeader");
 
 let button_show_All = document.getElementById("showAll") 
 button_show_All.addEventListener('click', showAll) 
@@ -7,7 +6,7 @@ button_show_All.addEventListener('click', showAll)
 let flag = false;
 
 function showAll(){
-    let inserted_data1 = `
+    let inserted_data1 = `<div id="part1">
     <div class="text1">
       See next city: <a href="#part2">London</a>
       <div class="Logo1">
@@ -29,8 +28,10 @@ function showAll(){
         </div>
       </div>
     </div>
+    </div>
     `
-    let inserted_data2 = `<div class="text2">
+    let inserted_data2 = `<div id="part2">
+    <div class="text2">
     See previous city: <a href="#part1">Moscow</a>
     <div class="Logo2">
       London
@@ -51,10 +52,11 @@ function showAll(){
       </div>
     </div>
   </div>
+    </div>
     `
     if (flag == false){
-        content1.insertAdjacentHTML('beforeend', inserted_data1);
-        content2.insertAdjacentHTML('beforeend', inserted_data2);
+        content.insertAdjacentHTML('afterend', inserted_data2);
+        content.insertAdjacentHTML('afterend', inserted_data1);
         flag = true;
     } 
     else alert("All articles are shown already")
