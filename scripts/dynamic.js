@@ -86,7 +86,7 @@ function showAll(){
             </div>
         `
         content.insertAdjacentHTML('beforebegin', inserted_data);
-        count=i
+        count=i+1
         }
     } 
     else alert("All articles are shown already")
